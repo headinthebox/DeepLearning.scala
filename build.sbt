@@ -1,5 +1,7 @@
 parallelExecution in Global := false
 
+lazy val raii = project
+
 lazy val DifferentiableKernel =
   project.dependsOn(OpenCL, OpenCLCodeGenerator, CumulativeTape, Layer, `stateless-future-util`, Symbolic % Test)
 
